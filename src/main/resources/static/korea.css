@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#states path {
+	fill: #FAE5E3;
+	stroke: LightSteelBlue;
+	stroke-width: 2px;
+}
+
+#states path:hover {
+	fill: pink;
+	transition:  0.5s ease;
+}
+
+#states .active {
+	fill: #00B700;
+}
+
+#states .activeDetail {
+	fill: LightSteelBlue;
+}
+
+#states path {
+	cursor: pointer;
+}
+
+#states text {
+	cursor: pointer;
+	font-size: 13px;
+	font-family: 'Dung';
+	fill: #1B1B1C;
+}
+
+/* 지도 크기 */ 
+svg {
+	height: 893px;
+	width: 787px;
+}
+
+#mapContainer {
+	background-color: LightSteelBlue;
+}

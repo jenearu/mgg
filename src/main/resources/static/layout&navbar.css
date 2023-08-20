@@ -1,0 +1,118 @@
+@charset "UTF-8";
+body{
+	background-color: antiquewhite !important;
+}
+.brandBox {
+    background-color: antiquewhite !important;
+}
+
+.brandContentWrapper {
+ 	  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#textbox{
+	flex: 1;
+  text-align: left;
+}
+#text {
+	width:auto;
+    align-items: center;
+    padding-left: 21px;
+    text-align: left;
+    font-family: 'Dung';
+    color: #1B1B1C;
+    font-size: 22px;
+}
+
+/* 먹골골 로고 png 파일*/
+#brandName {
+  flex: 1;
+  text-align: center;
+}
+#logo {
+	width: 270px;
+	height: 160px;
+	padding: 10px;
+	display:block;
+	margin:auto;
+}
+
+#signInUp {
+    flex: 1;
+ 	text-align: right;
+ 	margin-right: 16px;
+}
+
+#signDivider {
+	font-family: 'Dung';
+	font-size: 25px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 4px;
+    color: #1B1B1C;
+}
+
+#loginButton, #signupButton {
+	font-family: 'Dung';
+	font-size: 25px;
+	text-decoration: none;
+    color: #1B1B1C;
+}
+
+#signupButton:hover {
+    color: #EE3898;
+}
+
+#loginButton:hover {
+    color: #EE3898;
+}
+
+/* 네비게이션 바 */
+.navbar {
+	padding: 0px;
+	background-color: #1B1B1C;
+	--bs-navbar-hover-color: #EE3898;
+}
+
+.navbar-toggler{
+	border-color: #EE3898;
+	background-color: #EE3898;
+	margin:8px;
+}
+.navbar-toggler span{
+	background-color: #EE3898;
+}
+
+.navbar-collapse {
+    flex-basis: 0;
+    flex-grow: 1;
+	align-items: center;
+	flex-flow: nowrap;
+}
+
+.navbar-nav {
+	--bs-nav-link-color: #FEF8EA;
+	display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0rem 0rem;
+}
+
+.navbar-nav .nav-item {
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'Dung';
+    font-size: 40px;
+}
+
+body {
+    background-color: #FEF8EA;
+}
+
+#fixedContent{
+	position: relative;
+  	min-height: 100vh;
+}

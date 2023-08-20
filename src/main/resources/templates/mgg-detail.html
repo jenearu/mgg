@@ -1,0 +1,35 @@
+<html layout:decorate="~{layout}">
+
+<div layout:fragment="content">
+
+	<link rel="stylesheet" type="text/css" th:href="@{/mgg-detail.css}">
+	<!-- kakaoApi -->
+	<script type="text/javascript"
+		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=aa8ed2785db0138dc7d9bdb1f5756790"></script>
+	<script type="text/javascript" th:src="@{/mgg-detail.js}"></script>
+	<div id="mggInfoBoox">
+		<!-- div 태그 안 class 이름들은 정렬을 위해서 만든 것들 -->
+		<div class="selectMgg" id="mggMap"
+			style="width: 500px; height: 500px;"></div>
+		<div class="selectMgg" id = "mgginfo">
+			<h2 id="mggName" th:text="${selectmgg.FCLTY_NM}"></h2>
+			<p id="mggAdress" th:text="${selectmgg.RDNMADR_NM}"></p>
+			<p id="mggRoute" th:text="${selectmgg.NEARBY_PBTRNSP_NM}"></p>
+			<p id="mggParking" th:text="${selectmgg.PARKNG_POSBL_AT}"></p>
+		</div>
+	</div>
+	<div id="categoryButtons">
+		<button id="btnAll" class="w-btn w-btn-gra2" type="button">전체</button>
+		<button id="btnKorean" class="w-btn w-btn-gra1" type="button">한식</button>
+		<button id="btnChinese" class="w-btn w-btn-brown" type="button">중식</button>
+		<button id="btnWestern" class="w-btn w-btn-blue" type="button">양식</button>
+		<button id="btnJapanese" class="w-btn w-btn-red" type="button">일식</button>
+		<button id="btnOther" class="w-btn w-btn-gray" type="button">기타</button>
+	</div>
+	<div id="restaurantListBox"></div>
+	<div id="pageControlButtons">
+		<button id="before" class="w-btn-outline w-btn-gray-outline" type="button">이전</button>
+		<button id="next" class="w-btn-outline w-btn-gray-outline" type="button">다음</button>
+	</div>
+</div>
+</html>
